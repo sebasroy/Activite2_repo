@@ -13,6 +13,14 @@ section h2
     text-shadow: 2px 2px 2px black;
 }
 
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+}
+
 /* Header */
 
 header h1
@@ -22,6 +30,21 @@ header h1
     color: #995823;
     text-shadow: 2px 2px 2px black;
 }
+
+@media all and (max-width: 1024px)
+{
+    header
+    {
+        display: inline-block;
+    }
+    #photo
+    {
+        position: relative;
+        left: 5px;
+    }
+}
+
+/* Corps */
 
 section
 {
@@ -49,4 +72,22 @@ section
 {
     width: 30%;
     margin-right: 2px;
+}
+
+@media all and (max-width: 1024px)
+{
+    section
+    {
+        width: auto;
+        text-align : left ;
+        display: block;
+        margin-bottom: 15px;
+    }
+    #experience, #competences, #formation:last-child
+    {
+        text-align: left;
+        display: block;
+        width: auto;
+        margin: auto;
+    }
 }
